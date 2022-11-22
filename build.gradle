@@ -30,7 +30,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 	// https://mvnrepository.com/artifact/org.zeroturnaround/zt-zip
-	implementation 'org.zeroturnaround:zt-zip:1.12'
+	// implementation 'org.zeroturnaround:zt-zip:1.12'
 
 }
 
