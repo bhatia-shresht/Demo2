@@ -4,5 +4,13 @@ repos:
     -   id: snyk-audit
         name: snyk-audit
         description: Audit javascript library with Snyk.
-        entry: snyk-audit.sh
+        entry: snyk-test.sh
         language: script
+        stages: [pre-commit]
+
+    -   id: snyk-iac
+        name: snyk-iac
+        description: Audit IAC with Snyk.
+        entry: snyk-iac.sh
+        language: script
+

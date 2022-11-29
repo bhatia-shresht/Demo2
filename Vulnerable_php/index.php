@@ -2,9 +2,9 @@
 
   $host = 'localhost';
   $db_name = 'sql_injection';
-  //$username = 'root';
-  //$password = '';
-  //$connection = mysqli_connect($host,$username,$password,$db_name);
+  $username = 'root';
+  $password = '';
+  $connection = mysqli_connect($host,$username,$password,$db_name);
   
   if( isset($_POST['InputEmail']) && isset($_POST['InputPassword']) ){
 
@@ -18,7 +18,7 @@
     
     $query = "SELECT * FROM users WHERE email='$InputEmail' AND password='$InputPassword'";
     
-    //$row = $connection -> query($query);
+    $row = $connection -> query($query);
     if(mysqli_num_rows($row) > 0)
     {
       header("Location: index.php?message=1");
