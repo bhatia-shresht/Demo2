@@ -1,16 +1,12 @@
 repos:
 -   repo: local
     hooks:
-    -   id: snyk-audit
-        name: snyk-audit
-        description: Audit javascript library with Snyk.
-        entry: snyk-test.sh
-        language: script
-        stages: [pre-commit]
 
     -   id: snyk-iac
         name: snyk-iac
-        description: Audit IAC with Snyk.
+        description: Test IAC with Snyk.
         entry: snyk-iac.sh
         language: script
+        files: (\.tf|\.tfvars)$
+        stages: [push]
 
