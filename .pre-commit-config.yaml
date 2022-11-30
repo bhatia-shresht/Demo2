@@ -8,9 +8,3 @@ repos:
         language: script
         files: (\.tf|\.tfvars)$
         stages: [push]
-
-    -   id: snyk-test
-        name: snyk-test
-        description: Audit javascript library with Snyk.
-        entry: snyk-test.sh
-        language: script
