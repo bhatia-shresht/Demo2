@@ -1,7 +1,6 @@
 repos:
 -   repo: local
     hooks:
-
     -   id: snyk-iac
         name: snyk-iac
         description: Test IAC with Snyk.
