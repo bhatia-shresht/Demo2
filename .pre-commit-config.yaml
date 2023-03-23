@@ -1,10 +1,10 @@
 repos:
 -   repo: local
     hooks:
-    -   id: snyk-iac
-        name: snyk-iac
+    -   id: snyk-test
+        name: snyk-test
         description: Audit IAC with Snyk.
-        entry: snyk-iac.sh
+        entry: snyk-test.sh
         language: script
         pass_filenames: false
         files: (\.tf|\.tfvars)$
